@@ -9,7 +9,7 @@ Created on Sat Apr 18 22:06:39 2020
 
 import pandas as pd
 
-df = pd.read_csv('../insight_testsuite/test_1/input/complaints.csv')
+df = pd.read_csv('../input/complaints.csv')
 df = df[['Date received', 'Product', 'Company', ]]
 df['Date received'] = pd.to_datetime(df['Date received'])
 df = df.set_index('Date received')
